@@ -80,7 +80,7 @@ class Glasses extends Component {
     renderProduct = () => {
         return data.map((item, index) => {
             return (
-                <div className='col-4 mt-3' >
+                <div className='col-2 mt-3' key={index}>
                     <Product cl={this.clickProduct} item={item} />
                 </div>
             )
@@ -96,10 +96,7 @@ class Glasses extends Component {
         const { url } = this.state.dataGlass
         return (
             <div className='container'>
-                <div className='row' >
-                    {this.renderProduct()}
-                </div>
-                <div className='row mt-3'>
+                <div className='row mt-3 mb-3'>
                     <div className='col-7'>
                         <img src='./img/model.jpg' alt='model'></img>
                         <div className='glasses' >
@@ -110,6 +107,10 @@ class Glasses extends Component {
                         <img src='./img/model.jpg' alt='model2'></img>
                     </div>
                 </div>
+                <div className='row' >
+                    {this.renderProduct()}
+                </div>
+
             </div>
         );
     }

@@ -1,11 +1,13 @@
 .glasses {
   position: absolute;
-  bottom: -520px;
-  right: 70.25%;
+  top: 23%;
+  left: 12%;
 }
 .glasses img {
   width: 250px;
 }
 body {
-  background-image: url(../../public/img/background.jpg);
+  background: url(../../public/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
